@@ -1,5 +1,5 @@
 //
-//  ISViewController.h
+//  ISFlakeView.h
 //  Flake
 //
 //  Created by Peter Somlo on 9/12/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ISViewController : UIViewController
+@interface ISFlakeView : UIView
 
 @end

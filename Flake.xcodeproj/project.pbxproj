@@ -18,7 +18,8 @@
 		D00C4FB417E22A1F00DD80F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FB317E22A1F00DD80F8 /* Default-568h@2x.png */; };
 		D00C4FB717E22A1F00DD80F8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FB517E22A1F00DD80F8 /* MainStoryboard_iPhone.storyboard */; };
 		D00C4FBA17E22A1F00DD80F8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FB817E22A1F00DD80F8 /* MainStoryboard_iPad.storyboard */; };
-		D00C4FBD17E22A1F00DD80F8 /* ISViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FBC17E22A1F00DD80F8 /* ISViewController.m */; };
+		D00C4FC517E22E3000DD80F8 /* ISFlakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FC417E22E3000DD80F8 /* ISFlakeView.m */; };
+		D00C4FC817E22F6300DD80F8 /* ISFlakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FC717E22F6300DD80F8 /* ISFlakeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +38,10 @@
 		D00C4FB317E22A1F00DD80F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D00C4FB617E22A1F00DD80F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		D00C4FB917E22A1F00DD80F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		D00C4FBB17E22A1F00DD80F8 /* ISViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISViewController.h; sourceTree = "<group>"; };
-		D00C4FBC17E22A1F00DD80F8 /* ISViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISViewController.m; sourceTree = "<group>"; };
+		D00C4FC317E22E3000DD80F8 /* ISFlakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISFlakeView.h; sourceTree = "<group>"; };
+		D00C4FC417E22E3000DD80F8 /* ISFlakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISFlakeView.m; sourceTree = "<group>"; };
+		D00C4FC617E22F6300DD80F8 /* ISFlakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISFlakeViewController.h; sourceTree = "<group>"; };
+		D00C4FC717E22F6300DD80F8 /* ISFlakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISFlakeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +92,10 @@
 				D00C4FAD17E22A1F00DD80F8 /* ISAppDelegate.m */,
 				D00C4FB517E22A1F00DD80F8 /* MainStoryboard_iPhone.storyboard */,
 				D00C4FB817E22A1F00DD80F8 /* MainStoryboard_iPad.storyboard */,
-				D00C4FBB17E22A1F00DD80F8 /* ISViewController.h */,
-				D00C4FBC17E22A1F00DD80F8 /* ISViewController.m */,
+				D00C4FC317E22E3000DD80F8 /* ISFlakeView.h */,
+				D00C4FC417E22E3000DD80F8 /* ISFlakeView.m */,
+				D00C4FC617E22F6300DD80F8 /* ISFlakeViewController.h */,
+				D00C4FC717E22F6300DD80F8 /* ISFlakeViewController.m */,
 				D00C4FA417E22A1F00DD80F8 /* Supporting Files */,
 			);
 			path = Flake;
@@ -180,7 +185,8 @@
 			files = (
 				D00C4FAA17E22A1F00DD80F8 /* main.m in Sources */,
 				D00C4FAE17E22A1F00DD80F8 /* ISAppDelegate.m in Sources */,
-				D00C4FBD17E22A1F00DD80F8 /* ISViewController.m in Sources */,
+				D00C4FC517E22E3000DD80F8 /* ISFlakeView.m in Sources */,
+				D00C4FC817E22F6300DD80F8 /* ISFlakeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
