@@ -10,4 +10,6 @@
 
 @interface ISFlakeView : UIView
 
+@property (nonatomic, weak) id sceneObjects;
+
 @end

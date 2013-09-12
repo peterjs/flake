@@ -8,10 +8,13 @@
 
 #import "ISFlakeView.h"
 #import "DDLog.h"
+#import "ISSceneObject.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @implementation ISFlakeView
+
+@synthesize sceneObjects;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -24,7 +27,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (void)awakeFromNib
 {
-    [self setup];
+
 }
 
 // Only override drawRect: if you perform custom drawing.
@@ -32,16 +35,11 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-}
-
-- (void)setup
-{
-    [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(update) userInfo:nil repeats:YES];
-}
-
-- (void)update
-{
-    DDLogVerbose(@"tick");
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    for (ISSceneObject* sceneObj in self.sceneObjects) {
+        [sceneObj renderInContext:context];
+    }
 }
 
 @end
