@@ -24,15 +24,24 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (void)awakeFromNib
 {
+    [self setup];
 }
 
-/*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
 }
-*/
+
+- (void)setup
+{
+    [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(update) userInfo:nil repeats:YES];
+}
+
+- (void)update
+{
+    DDLogVerbose(@"tick");
+}
 
 @end
