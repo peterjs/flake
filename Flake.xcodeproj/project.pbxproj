@@ -28,6 +28,7 @@
 		D00C4FDF17E2365400DD80F8 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FD617E2365400DD80F8 /* ContextFilterLogFormatter.m */; };
 		D00C4FE017E2365400DD80F8 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FD817E2365400DD80F8 /* DispatchQueueLogFormatter.m */; };
 		D00C4FE117E2365400DD80F8 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FD917E2365400DD80F8 /* README.txt */; };
+		D00C4FE717E24B9B00DD80F8 /* ISSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FE617E24B9B00DD80F8 /* ISSceneObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		D00C4FD717E2365400DD80F8 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		D00C4FD817E2365400DD80F8 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		D00C4FD917E2365400DD80F8 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D00C4FE517E24B9B00DD80F8 /* ISSceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSceneObject.h; sourceTree = "<group>"; };
+		D00C4FE617E24B9B00DD80F8 /* ISSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSceneObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				D00C4FC617E22F6300DD80F8 /* ISFlakeViewController.h */,
 				D00C4FC717E22F6300DD80F8 /* ISFlakeViewController.m */,
 				D00C4FA417E22A1F00DD80F8 /* Supporting Files */,
+				D00C4FE517E24B9B00DD80F8 /* ISSceneObject.h */,
+				D00C4FE617E24B9B00DD80F8 /* ISSceneObject.m */,
 			);
 			path = Flake;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				D00C4FDE17E2365400DD80F8 /* DDTTYLogger.m in Sources */,
 				D00C4FDF17E2365400DD80F8 /* ContextFilterLogFormatter.m in Sources */,
 				D00C4FE017E2365400DD80F8 /* DispatchQueueLogFormatter.m in Sources */,
+				D00C4FE717E24B9B00DD80F8 /* ISSceneObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +387,7 @@
 				D00C4FC217E22A1F00DD80F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
