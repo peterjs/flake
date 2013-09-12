@@ -8,6 +8,9 @@
 
 #import "ISFlakeViewController.h"
 #import "ISFlakeView.h"
+#import "DDLog.h"
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @interface ISFlakeViewController ()
 @property (weak, nonatomic) IBOutlet ISFlakeView *flakeView;
@@ -18,6 +21,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     NSLog(@"whwhwhwhwwh");
+    DDLogVerbose(@"whwhwhwhwwh");
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -28,6 +32,7 @@
 - (void)viewDidLoad
 {
     NSLog(@"qqqqqqqqqqq");
+    DDLogVerbose(@"qqqqqqqqqqq");
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
