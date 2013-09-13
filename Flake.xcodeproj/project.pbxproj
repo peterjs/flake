@@ -31,6 +31,7 @@
 		D00C4FE717E24B9B00DD80F8 /* ISSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FE617E24B9B00DD80F8 /* ISSceneObject.m */; };
 		D00C4FEE17E39B9A00DD80F8 /* activeden_fox.png in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FEC17E39B9A00DD80F8 /* activeden_fox.png */; };
 		D00C4FEF17E39B9A00DD80F8 /* red_yellow_fire_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FED17E39B9A00DD80F8 /* red_yellow_fire_logo.png */; };
+		D00C4FF217E39C7100DD80F8 /* ISUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FF117E39C7100DD80F8 /* ISUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,8 @@
 		D00C4FE617E24B9B00DD80F8 /* ISSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSceneObject.m; sourceTree = "<group>"; };
 		D00C4FEC17E39B9A00DD80F8 /* activeden_fox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activeden_fox.png; sourceTree = "<group>"; };
 		D00C4FED17E39B9A00DD80F8 /* red_yellow_fire_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_yellow_fire_logo.png; sourceTree = "<group>"; };
+		D00C4FF017E39C7100DD80F8 /* ISUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISUtils.h; sourceTree = "<group>"; };
+		D00C4FF117E39C7100DD80F8 /* ISUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				D00C4FA417E22A1F00DD80F8 /* Supporting Files */,
 				D00C4FE517E24B9B00DD80F8 /* ISSceneObject.h */,
 				D00C4FE617E24B9B00DD80F8 /* ISSceneObject.m */,
+				D00C4FF017E39C7100DD80F8 /* ISUtils.h */,
+				D00C4FF117E39C7100DD80F8 /* ISUtils.m */,
 			);
 			path = Flake;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				D00C4FDF17E2365400DD80F8 /* ContextFilterLogFormatter.m in Sources */,
 				D00C4FE017E2365400DD80F8 /* DispatchQueueLogFormatter.m in Sources */,
 				D00C4FE717E24B9B00DD80F8 /* ISSceneObject.m in Sources */,
+				D00C4FF217E39C7100DD80F8 /* ISUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 #import "ISFlakeView.h"
 #import "DDLog.h"
 #import "ISSceneObject.h"
+#import "ISUtils.h"
 
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
@@ -104,13 +105,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     _animal = [[ISSceneObject alloc] init];
     _animal.position = CGPointMake(150.0, 150.0);
     _animal.size = CGSizeMake(400, 400);
-//    UIImage* resizedAnimal = [FaceView imageWithImage:[UIImage imageNamed:@"activeden_fox.png"] scaledToSize:_animal.size];
+    UIImage* resizedAnimal = [ISUtils scaleImage:[UIImage imageNamed:@"activeden_fox.png"] toSize:_animal.size];
     _animal.draw = ^(CGContextRef context) {
-//        [resizedAnimal drawAtPoint:CGPointMake(0.0,0.0)];
+        [resizedAnimal drawAtPoint:CGPointMake(0.0,0.0)];
         
 //        [[UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:self.kSnow] setFill];
         
-        [[UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:1.0] setFill];
+        [[UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:0.1] setFill];
         
         
         CGContextBeginPath(context);
