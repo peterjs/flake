@@ -29,6 +29,8 @@
 		D00C4FE017E2365400DD80F8 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FD817E2365400DD80F8 /* DispatchQueueLogFormatter.m */; };
 		D00C4FE117E2365400DD80F8 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FD917E2365400DD80F8 /* README.txt */; };
 		D00C4FE717E24B9B00DD80F8 /* ISSceneObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C4FE617E24B9B00DD80F8 /* ISSceneObject.m */; };
+		D00C4FEE17E39B9A00DD80F8 /* activeden_fox.png in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FEC17E39B9A00DD80F8 /* activeden_fox.png */; };
+		D00C4FEF17E39B9A00DD80F8 /* red_yellow_fire_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D00C4FED17E39B9A00DD80F8 /* red_yellow_fire_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		D00C4FD917E2365400DD80F8 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D00C4FE517E24B9B00DD80F8 /* ISSceneObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSceneObject.h; sourceTree = "<group>"; };
 		D00C4FE617E24B9B00DD80F8 /* ISSceneObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSceneObject.m; sourceTree = "<group>"; };
+		D00C4FEC17E39B9A00DD80F8 /* activeden_fox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activeden_fox.png; sourceTree = "<group>"; };
+		D00C4FED17E39B9A00DD80F8 /* red_yellow_fire_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_yellow_fire_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		D00C4FA317E22A1F00DD80F8 /* Flake */ = {
 			isa = PBXGroup;
 			children = (
+				D00C4FEB17E39B9A00DD80F8 /* Resources */,
 				D00C4FAC17E22A1F00DD80F8 /* ISAppDelegate.h */,
 				D00C4FAD17E22A1F00DD80F8 /* ISAppDelegate.m */,
 				D00C4FB517E22A1F00DD80F8 /* MainStoryboard_iPhone.storyboard */,
@@ -172,6 +177,15 @@
 				D00C4FD917E2365400DD80F8 /* README.txt */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D00C4FEB17E39B9A00DD80F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D00C4FEC17E39B9A00DD80F8 /* activeden_fox.png */,
+				D00C4FED17E39B9A00DD80F8 /* red_yellow_fire_logo.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,8 @@
 				D00C4FB717E22A1F00DD80F8 /* MainStoryboard_iPhone.storyboard in Resources */,
 				D00C4FBA17E22A1F00DD80F8 /* MainStoryboard_iPad.storyboard in Resources */,
 				D00C4FE117E2365400DD80F8 /* README.txt in Resources */,
+				D00C4FEE17E39B9A00DD80F8 /* activeden_fox.png in Resources */,
+				D00C4FEF17E39B9A00DD80F8 /* red_yellow_fire_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
