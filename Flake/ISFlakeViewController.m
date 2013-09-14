@@ -155,13 +155,20 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     
     self.flakeView.sceneObjects = _scene;
     
+    [self.flakeView addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(translate:)]];  // gesture to modify our Model
+    
 //    self.contentMode = UIViewContentModeRedraw; // if our bounds changes, redraw ourselves
 }
 
-
 - (void)update
 {
-    DDLogVerbose(@"tick");
+//    DDLogVerbose(@"tick");
+}
+
+
+- (void)translate:(UIPanGestureRecognizer *)gesture
+{
+    DDLogVerbose(@"translate");
 }
 
 @end
