@@ -12,6 +12,8 @@
 #import "ISSceneObject.h"
 #import "ISUtils.h"
 
+#import "MARTNSObject.h"
+
 static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 @interface ISFlakeViewController ()
@@ -156,6 +158,17 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     self.flakeView.sceneObjects = _scene;
     
     [self.flakeView addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(translate:)]];  // gesture to modify our Model
+    
+    //-all_load if you have categories in the library, because otherwise those are not loaded
+    //add to Other Linker Flags of the main project
+    NSArray *subclasses = [NSObject rt_subclasses];
+    for (id sc in subclasses) {
+        DDLogVerbose(@"subclass %@", sc);
+    }
+    
+    for (id m in [UIPanGestureRecognizer rt_ivars]) {
+        DDLogVerbose(@"method %@", m);
+    }
     
 //    self.contentMode = UIViewContentModeRedraw; // if our bounds changes, redraw ourselves
 }
