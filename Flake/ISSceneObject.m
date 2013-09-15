@@ -88,4 +88,16 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     CGContextRestoreGState(context);
 }
 
+//Keys in a dictionary are copied. The objects are retained. Usually, strings are used as keys, and since they do conform to NSCopying, there's no issues. If for some reason you wanted to use some other kind of object, you'd have to make certain it conformed to NSCopying as well.
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    ISSceneObject *obj = [[ISSceneObject alloc] init];
+    obj.AABB = self.AABB;
+    obj.position = self.position;
+    obj.size = self.size;
+    obj.draw = self.draw;
+    return obj;
+}
+
 @end

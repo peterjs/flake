@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ISFlakeView : UIView
+@interface ISFlakeView : UIView <UIGestureRecognizerDelegate>
 
 @property (nonatomic, weak) id sceneObjects;
 
+- (void)addGestureRecognizer:(Class)gestureRecognizer withTarget:(id)target action:(SEL)action forObject:(id)object;
 @end

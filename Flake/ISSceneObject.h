@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ISSceneObject : NSObject
+@interface ISSceneObject : NSObject <NSCopying>
 
 @property (nonatomic) CGRect AABB;
 @property (nonatomic) CGPoint position;

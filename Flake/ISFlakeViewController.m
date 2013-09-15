@@ -14,7 +14,7 @@
 
 #import "MARTNSObject.h"
 
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+static const int ddLogLevel = LOG_LEVEL_INFO;
 
 @interface ISFlakeViewController ()
 @property (weak, nonatomic) IBOutlet ISFlakeView *flakeView;
@@ -157,7 +157,7 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     
     self.flakeView.sceneObjects = _scene;
     
-    [self.flakeView addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(translate:)]];  // gesture to modify our Model
+    [self.flakeView addGestureRecognizer:[UIPanGestureRecognizer class] withTarget:self action:@selector(translate:)forObject:_animal];
     
     //-all_load if you have categories in the library, because otherwise those are not loaded
     //add to Other Linker Flags of the main project
